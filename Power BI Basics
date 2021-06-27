@@ -1,0 +1,28 @@
+>> Components of Power BI:
+1. Power Query
+2. Power Pivot
+3. Power View
+4. Power Map
+5. Power BI Service
+6. Power BI Q&A
+7. Data Management Gateway
+8. Data Catalog
+
+----------------------------------------------------------------------------------------------------------------------------
+>> Power BI Architecture:
+
+Data Preparation ---Extract-----> Transform ----> Load -> Data Warehouse -> Visualization -> Business User
+
+----------------------------------------------------------------------------------------------------------------------------
+>> Building Blocks of Power BI:
+
+1. Visualizations: visual representation of data eg. graph, charts, maps, etc
+2. Datasets: collection of data or info in terms of spreadsheets
+3. Reports: collection of viz that appears together on one or more pages is a report. collection of ietms having same motive
+4. Dashboards: single page interfaec that uses the most-important elemenst of a report to tell a story
+(Report vs Dashboard: Dashboard 1 page and most imp, compressed version of reports)
+5. Tiles: single viz found in a report or on a dashboard
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
