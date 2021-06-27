@@ -1,0 +1,69 @@
+Get Data -> Excel -> Select the excel file
+
+Navigator window -> excel file -> select of the tables you want 
+
+Transform data to work on missing data etc - clean data before loading
+
+Load when data is ready
+
+Now it loads data into Power Pivot model 
+
+Right side -> Fileds table : tables in fields pane ready to build visuals
+
+To get rest of the data follow same steps -> Get data eg. Text/ CSV 
+
+Text / CSV : Option of File Origin, Delimiter (eg. comma), Data Type Protection (eg. Based on first 200 rows)
+
+If want to consolidate all the csv files into 1 table then copy the address of the folder path 
+
+Get Data -> More -> Folder -> Connect -> Pate Folder pATH -> ok -> Combine and Transform Data
+
+------------------------------------------------------------------------------------------------------------
+
+Power Query opens in the second window - clean and transform the data before loading to the model
+
+Left side -> Power Queries created so far
+
+Right -> list of steps in selector query
+
+Table : Delete the column you do not want eg. Data Source, Filter the colum eg. Filter just 1 country 
+
+There are alof of options in the ribbon top for cleaning and transforming the data 
+(Refer to Power Query Basics File)
+
+Close and Apply
+---------------------------------------------------------------------------------------------------------------
+
+Model View - to check all the relationships are correct
+
+Double click on the link to see the and edit relationship
+
+If relationship missing - drag and drop 
+
+----------------------------------------------------------------------------------------------------------------
+
+To create a calendar table:
+1. Power Query
+2. Power BI : CALENDAR or CALENDARAUTO dax functions
+Data View -> Table Tools -> New Table -> Calendar = CALENDARAUTO()
+
+To set some formatting:
+In Data view -> select a table from right -> Select the column -> Column Tools -> , (Comma separator for numbers so dont have to do manually in viz)
+Country column -> Data Catagory -> Country (for Map viz)
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+Reports :
+Instert -> Q&A
+A vs B as gauge
+
+Visualization : KPI - Trend Axis eg. Dates, Indicator eg. Forecast (cost), Target Goals eg. Budget
+
+If costs > Budget and showing Green or positive in KPI then we can go to settings right side
+Goals -> Distance Direction as Decreasing is positive
+Color coding as Low is good
+To drill down on the data (on line chart - Decision tree looking icon)
+
+
+
