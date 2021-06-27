@@ -1,0 +1,24 @@
+>> Using Power BI:
+
+-> Part 1. Install Power BI:
+Get Started ->
+
+-> Get Data : A lot of data sources to choose from
+When selected the appropriate file 
+Navigator wondow opens up which contains eg. excel file with field files
+Click on field file -> Load
+
+Create and Modify a Simple Visual:
+Step 1: Fields
+Step 2: Visualizations
+
+-> .pbix -> Report saved as but not the best way to share the work
+Save and Publish your Report: Step 1: File -> Save as -> 
+Step 2: Publish (Ribbon on the Home tab)
+
+
+-> Joining Data Sources / Sets
+Add another data source
+Power BI auto detects the relationship and joins but we also have an option to manually do it
+
+
