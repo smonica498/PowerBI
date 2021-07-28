@@ -1,0 +1,36 @@
+1. Data Discovery / Data Cleansing phase : Get Data, Transform Data (Ribbon)
+2. Data Modeling / Data Mashup : Data View, Model View (LHS - Last 2)
+3. Data Visualization : Report view (LHS - top)
+4. Data Sharing : Publish (Ribbon - RHS) (Subscription, Power BI Service, Licensing)
+
+LHS -> Views
+RHS -> Panes
+Top -> Ribbon / Tabs
+
+Get Data -> Web -> URL -> 
+
+Access Web Content window opens up : 
+how going to authenticate to that source 
+
+then : data preview
+Load -  take data see above and then load into power bi data model and immediately can start making viz
+Transform data / Edit - when need to fix data. Going to launch / open Power Query for Data cleansing / transform
+
+1. Transform Data: opens another window of Power Query editor
+pbix - file extension
+Rename Query - more appropriate and user friendly name for data model table : 
+Query Setting pane : rename the Query name (if accidently hit x then Click on View -> Query Settings), Applied Steps (Little Gear icon to edit that step x to cancel the step)
+Diffrent Data Types of the column - can get different types of transform available
+
+Remove columns that is not needed - 
+Method 1 Right click -> Remove Columns
+Method 2 Home Tab -> Choose Columns -> Choose Colums to keep   
+Transform date to Year - Right click -> Duplicate. On Duplicated column, Right click -> Transform ->Year -> Year 
+Combine 2 colums/fields together - 1 city name in multiple States so less ambiguous
+Method 1 Select 2 columns, Right click -> Merge columns
+Method 2 Add column Tab -> Column Form Examples -> From All Columns (can give example and Power BI can find patterns)
+
+when done with Transform step :
+Home Tab -> Close and Apply
+
+2. Data Modeling:
