@@ -1,4 +1,4 @@
-1. Data Discovery / Data Cleansing phase : Get Data, Transform Data (Ribbon)
+1. Data Discovery / Data Cleansing phase : Get Data, Transform Data (Ribbon)1. Data Discovery / Data Cleansing phase : Get Data, Transform Data (Ribbon)
 2. Data Modeling / Data Mashup : Data View, Model View (LHS - Last 2)
 3. Data Visualization : Report view (LHS - top)
 4. Data Sharing : Publish (Ribbon - RHS) (Subscription, Power BI Service, Licensing)
@@ -34,3 +34,68 @@ when done with Transform step :
 Home Tab -> Close and Apply
 
 2. Data Modeling:
+Benefits of having separate date table - Fiscal year start and end different for different orgs
+For retail, how sale is doing on weends vs weekdays or holidays
+Add Date Table :
+Method 1 Pull from data source
+Method 2 Power Query Script
+Method 3 DAX (Data Analysis Expression Language)
+
+DAX (1. DAX Calculated columns 2. DAX Calculated measures (below is 1) ): LHS -> Data View (middle one)
+Table Tools tab -> On Ribbon, New Table 
+Calendar = CALENDARAUTO()
+Table Tools -> New Columns 
+Year = YEAR('Calendar'[Date])
+Month Number = MONTH('Calendar'[Date])
+Month = FORMAT([Date],"mmmm") 
+mmmm January
+mmm Jan
+mmm-yyyy Jan-2000
+dddd Saturday
+dd 01 (Day of Month)
+
+Model View:
+Relationship 
+Table drag and drop to connect
+
+
+Modeling Tab:
+Measures vs Columns
+- Metrics      - Descriptive
+- Aggregates   - Categorical
+Method 1 Modeling -> Measure
+Method 2 Right click on Table -> Measure
+Total Banks = Count
+3. Data Visualizatons:
+Select Viz 
+Axis
+Legend
+Values 
+Issue 1: Graph same values in graph because there is no relationship between 2 tables - to solve Model view
+Issue 2: Sort by Months chronologically (In viz, ... -> Sort by -> Month still not exactly fixed)
+Click on the Nmae of the column i.e. Month on Fields pane -> Column Tools Ribbon -> Sort by Column -> Month Number
+
+Select a chart -> Format Tab -> Edit interactions -> Filter, Highlight, None
+
+View Tab -> Themes -> Customize -> Save JSON File -> Browse theme
+
+For Tooltip:
+New Page
+Format -
+Page Information -> Tooltio ON
+Page Size -> Type: Tooltip
+Page background -> Colar, Transparency
+Viz:
+Card - Fields: Total Banks
+Map - Location: City ST, Size: Total Banks
+Still no data points on Map why? 
+Select Map -> Click on City ST -> Colum Tools Tab -> Data Category: Place
+Now go to Fields (beside Format) -> Tooltip -> Drag and drop State
+
+Double click on the page or  Viz Q&A
+eg. Total banks by State between 2015 and 2020 as treemap
+
+4. Data Sharing: Cloud oart of Power BI
+Publish -> Sign in to account -> Save work on local work station -> pbix file -> Select a destination (work space)
+
+Share, Refresh
